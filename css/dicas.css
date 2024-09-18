@@ -1,0 +1,147 @@
+/* Reset básico para garantir uma aparência consistente em diferentes navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo a fonte padrão e o background da página */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 0;
+}
+
+/* Estilizando o cabeçalho com a imagem no topo */
+header {
+    background: #4CAF50;
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    max-width: 180px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e0e0e0;
+}
+
+/* Estilizando a seção de dicas */
+main {
+    padding: 30px 20px;
+    background-color: #f4f4f4;
+}
+
+.tips-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+
+.tips-section h1 {
+    font-size: 2.5em;
+    color: #4CAF50;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.tip-item {
+    margin-bottom: 40px;
+}
+
+.tip-item h2 {
+    font-size: 1.8em;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.tip-item p {
+    margin: 10px 0;
+    line-height: 1.7;
+    font-size: 1.1em;
+}
+
+.tip-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Estilizando links de dicas */
+.tip-item a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.tip-item a:hover {
+    color: #388E3C;
+    text-decoration: underline;
+}
+
+/* Estilizando o rodapé */
+footer {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+/* Tornando o layout responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .tips-section {
+        padding: 20px;
+    }
+
+    .tip-item h2 {
+        font-size: 1.6em;
+    }
+
+    .tips-section h1 {
+        font-size: 2em;
+    }
+}

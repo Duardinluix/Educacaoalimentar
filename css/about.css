@@ -1,0 +1,124 @@
+/* Reset básico para garantir que a página tenha uma aparência consistente em diferentes navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo a fonte padrão e o background da página */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 0 20px;
+}
+
+/* Estilizando o cabeçalho */
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilizando o logo com fundo verde */
+.header-image {
+    background: #4CAF50; /* Fundo verde atrás do logo */
+    padding: 20px 0;
+}
+
+.logo {
+    display: block;
+    margin: 20px auto;
+    max-width: 200px;
+}
+
+/* Estilizando o conteúdo principal */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+main h1, main h2, main h3 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+main h1 {
+    font-size: 2em;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+}
+
+main h2 {
+    font-size: 1.5em;
+}
+
+main h3 {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+/* Estilizando os parágrafos */
+p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* Estilizando as imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+/* Adicionando um estilo para as seções com imagens */
+section img {
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    padding: 5px;
+}
+
+/* Adicionando um estilo para imagens específicas no conteúdo */
+main img[src*="carboidratos.png"],
+main img[src*="vista-superior-de-varios-alimentos-ricos-em-proteinas-sobre-uma-mesa-de-marmore.webp"],
+main img[src*="gorduras-boas.jpg"],
+main img[src*="fontes-de-vitaminas-e-minerais.webp"],
+main img[src*="agua-fresca-em-um-copo.jpg"] {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Estilizando o rodapé (se houver) */
+footer {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
